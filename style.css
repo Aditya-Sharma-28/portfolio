@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.sidebar{
+  position: fixed;
+  width: 240px;
+  left: -240px;
+  height: 100%;
+  background: #1e1e1e;
+  transition: all .5s ease;
+}
+.sidebar header{
+  font-size: 28px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #1b1b1b;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.sidebar a{
+  display: block;
+  height: 65px;
+  width: 100%;
+  color: white;
+  line-height: 65px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-left: 5px solid transparent;
+  font-family: 'Open Sans', sans-serif;
+  transition: all .5s ease;
+}
+a.active,a:hover{
+  border-left: 5px solid #b93632;
+  color: #b93632;
+}
+.sidebar a i{
+  font-size: 23px;
+  margin-right: 16px;
+}
+.sidebar a span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  margin: 15px 30px;
+  font-size: 29px;
+  background: #262626;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: all .5s ease;
+}
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel{
+  margin-left: 245px;
+  opacity: 1;
+  visibility: visible;
+}
+@media(max-width : 860px){
+  .sidebar{
+    height: auto;
+    width: 70px;
+    left: 0;
+    margin: 100px 0;
+  }
+  header,#btn,#cancel{
+    display: none;
+  }
+  span{
+    position: absolute;
+    margin-left: 23px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sidebar a{
+    height: 60px;
+  }
+  .sidebar a i{
+    margin-left: -10px;
+  }
+  a:hover {
+    width: 200px;
+    background: inherit;
+  }
+  .sidebar a:hover span{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.main{
+    /*background-color: yellow;*/
+    width: 100vw;
+}
+
+.container{
+    display: flex;
+}
+
+.infoContainer{
+   /* background-color: rgb(56, 14, 223);*/
+    height: 50vh;
+    width: 55vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.devPic img{
+    height: 70vh;
+   
+}
+
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lora', serif;
+}
+
+.hello{
+    font-size: 50px;
+}
+
+.name{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.about{
+    font-size: 25px;
+}
+
+.moreAbout{
+    font-size: 15px;
+    margin-top: 23px;
+}
+
+.buttons{
+    margin-top: 34px;
+}
+
+.buttons button{
+   padding: 9px 14px;
+   border-radius: 22px;
+   color: aliceblue;
+   background-color: rgb(83, 83, 243);
+   font-size: 12px;
+   margin: 0 3px;
+   cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: aliceblue;
+    color: rgb(83, 83, 243);
+}
+
+.flex-container{
+display: flex;
+height: 10rem;
+padding: 8rem 10rem;
+}
+
+.contactForm{
+    padding: 0 34px;
+    padding-top: 100px;
+    font-family: 'Lora', serif;
+    margin: 0 88px;
+}
+
+.contactForm h1{
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+
+.contactForm form div{
+    padding: 15px 0;
+}
+
+.intro{
+    margin: 10px 88px;
+}
+
+.contact{
+    margin: 10px 88px;
+}
+
+.intro h2{
+    font-family: 'Lora', serif;
+    margin: 12px;
+}
+
+.intro p{
+    font-family: 'Lora', serif;
+    margin: 12px;
+}
+
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Lora', serif;
+}
+
+.skill{
+    width: 23px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.t75{
+width: 200px;
+background-color: rgb(255, 0, 0);
+}
+
+.t60{
+width: 170px;
+}
+
+.t65{
+width: 180px;
+}
+
+.t55{
+width: 150px;
+}
+
+.t65{
+width: 180px;
+}
+
+
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cross{
+    margin-left: 185px;
+    margin-top: 10px;
+}
+

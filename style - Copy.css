@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidebar{
+    position: fixed;
+    background-color: rgb(168, 154, 154);
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav{
+    padding: 30px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: rgb(7, 0, 0);
+}
+
+.main{
+    /*background-color: yellow;*/
+    width: 80vw;
+}
+
+.container{
+    display: flex;
+}
+
+.infoContainer{
+   /* background-color: rgb(56, 14, 223);*/
+    height: 50vh;
+    width: 70vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.devPic img{
+    height: 70vh;
+   
+}
+
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lora', serif;
+}
+
+.hello{
+    font-size: 50px;
+}
+
+.name{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.about{
+    font-size: 25px;
+}
+
+.moreAbout{
+    font-size: 15px;
+    margin-top: 23px;
+}
+
+.buttons{
+    margin-top: 34px;
+}
+
+.buttons button{
+   padding: 9px 14px;
+   border-radius: 22px;
+   color: aliceblue;
+   background-color: rgb(83, 83, 243);
+   font-size: 12px;
+   margin: 0 3px;
+   cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: aliceblue;
+    color: rgb(83, 83, 243);
+}
+
+.flex-container{
+display: flex;
+height: 10rem;
+padding: 8rem 10rem;
+}
+
+.contactForm{
+    padding: 0 34px;
+    padding-top: 100px;
+    font-family: 'Lora', serif;
+    margin: 0 88px;
+}
+
+.contactForm h1{
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+
+.contactForm form div{
+    padding: 15px 0;
+}
+
+.intro{
+    margin: 10px 88px;
+}
+
+.contact{
+    margin: 10px 88px;
+}
+
+.intro h2{
+    font-family: 'Lora', serif;
+    margin: 12px;
+}
+
+.intro p{
+    font-family: 'Lora', serif;
+    margin: 12px;
+}
+
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Lora', serif;
+}
+
+.skill{
+    width: 23px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.t75{
+width: 200px;
+background-color: rgb(255, 0, 0);
+}
+
+.t60{
+width: 170px;
+}
+
+.t65{
+width: 180px;
+}
+
+.t55{
+width: 150px;
+}
+
+.t65{
+width: 180px;
+}
+
+
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cross{
+    margin-left: 185px;
+    margin-top: 10px;
+}
+
